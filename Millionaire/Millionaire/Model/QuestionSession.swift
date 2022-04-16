@@ -7,15 +7,17 @@
 
 import Foundation
 
-class Question {
-    let question: String
+class QuestionSession: Codable {
+    
+    var question: String
     let optionA: String
     let optionB: String
     let optionC: String
     let optionD: String
-    let correctAnswer: Int
+    var correctAnswer: Int = 0
     
     init(questionText: String, choiceA: String, choiceB: String, choiceC: String, choiceD: String, answer: Int) {
+        
         question = questionText
         optionA = choiceA
         optionB = choiceB

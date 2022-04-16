@@ -7,15 +7,13 @@
 
 import UIKit
 
-class ResultsController: UIViewController {
+class MainScreenViewController: UIViewController {
     
     @IBOutlet weak var result: UILabel!
     
     var name: String = ""
-    var allCorrectAnswers: Int = 0
+    var correctAnswer: Int = 0
     var score: Int = 0
-    
-//    result.text = "\(score)$"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,5 +21,5 @@ class ResultsController: UIViewController {
         result.text = name
        
     }
-
+    
 }
